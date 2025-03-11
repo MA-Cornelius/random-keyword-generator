@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="keygenerator.css">
+    <link rel="shortcut icon" href="./copy_paste.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Random Key Generator</title>
+</head>
+<body>
+    <header>
+        Password Generator
+    </header>
+    <div class="password">
+        <input type="text" id="password" readonly value="hr>@3R8.E[u%" ><span id="copy-img"><img src="./copy_paste.png" alt="paste-img"></span>
+    </div>
+    <div class="passkey-conditions">
+        <div class="count">
+            <label for="length">Password Length</label>
+            <input type="number" id="length" value="10" min="4" max="20">
+        </div>
+        <div class="range">
+            <hr>
+        </div>
+        <div class="conditions-div">
+            <label><input type="checkbox" name="" id="uppercase" checked>Include Uppercase Letters</label>
+            <label><input type="checkbox" name="" id="lowercase" checked>Include Lowercase Letter</label>
+            <label><input type="checkbox" name="" id="numbers" checked>Include Numbers</label>
+            <label><input type="checkbox" name="" id="symbols" checked>Include Symbols</label>
+        </div>
+        <div class="strength">
+            <div>
+                <p>
+                    STRENGTH
+                </p>
+            </div>
+            <div>
+                <span id="strength">MEDIUM</span><span id="one"></span><span id="two"></span><span id="three"></span><span id="four"></span>
+            </div>
+        </div>
+        <div class="generate-btn">
+            <button id="generate">
+                Generate <span><img src="./arrow-right.png" alt="arw-left"></span>
+            </button>
+        </div>
+    </div>
+    <script src="keygenerator.js"></script>
+</body>
+</html>
